@@ -1,114 +1,40 @@
-body {
-    font-family: 'Playfair Display', serif; /* Cambiado a una tipografía más elegante */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: rgba(75, 75, 75, 0.8); /* Color gris oscuro con opacidad */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed; /* Fijo para que no se mueva */
-    width: 100%;
-    z-index: 10; /* Asegura que la barra esté por encima del carrusel */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.carousel {
     display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #aaccff;
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto; /* Asegura que el carrusel esté centrado */
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.carousel-slide {
-    display: block;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-slide img {
+    justify-content: center; /* Centra el carrousel horizontalmente */
+    align-items: center;     /* Centra el carrousel verticalmente */
     width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
 }
 
-.carousel-text {
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel-text {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: white; /* Texto en blanco */
-    padding: 10px 20px;
+    color: white;
     text-align: center;
-}
-
-.carousel-text h1 {
-    margin: 0;
-    font-size: 1.5em; /* Tamaño reducido para el nombre */
-}
-
-.carousel-text h2 {
-    margin: 5px 0 0;
-    font-size: 1.5em; /* Tamaño aumentado para el subtítulo */
-    font-weight: normal;
 }
 
 .contact-container {
-    padding: 40px 20px;
-    background-color: #e0e0e0; /* Fondo gris claro */
-    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
-}
-
-.contact-text {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.phone-button {
-    display: inline-block;
-    background-color: #4b4b4b;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.phone-button:hover {
-    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Color de fondo gris claro */
 }
 
 .contact-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    justify-content: center; /* Centra los elementos de contacto */
+    flex-wrap: wrap;        
+    width: 100%;            
 }
 
 .contact-item {
