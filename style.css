@@ -225,3 +225,84 @@ footer {
     color: #333; /* Color del texto */
     text-align: left; /* Alineación del texto */
 }
+
+
+
+/* Ajustes para el carrusel */
+.carousel {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 70vh; /* Altura del carrusel */
+    position: relative;
+    overflow: hidden; /* Para ocultar elementos que sobresalen */
+}
+
+.carousel img {
+    width: 100%; /* Hace que la imagen ocupe el ancho completo */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Ajustes para el texto en el carrusel */
+.carousel-text {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición */
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
+}
+
+.header, .footer {
+    padding: 10px; /* Espacio en la parte superior e inferior */
+}
+
+/* Estilos del contenedor de contacto */
+.contact-container {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espacio interno */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Ajustes para las imágenes y el texto de confianza */
+.trust-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px;
+}
+
+.trust-section img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.trust-text {
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-text h1 {
+        font-size: 2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .carousel-text p {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .trust-section {
+        flex-direction: column; /* Coloca la imagen arriba en pantallas pequeñas */
+        align-items: center; /* Centra la imagen y el texto */
+    }
+
+    .trust-section img {
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+}
